@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="/"><img src="/source/img/header-logo.svg" width="185" height="96" alt="Перейти на главную страницу"></a>
+      <a class="main-header__logo" href="index.html"><img src="img/header-logo.svg" width="185" height="96" alt="Перейти на главную страницу"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -17,13 +17,13 @@
               <a>Главная</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="/source/gallery.html">Фото и видео</a>
+              <a href="gallery.html">Фото и видео</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="/source/form.html">Форма отзыва</a>
+              <a href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="/">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -33,76 +33,80 @@
       <section class="intro">
         <div class="intro__wrapper">
           <div class="intro__cover">
-            <img class="intro__text" src="/source/img/intro-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+            <img class="intro__text" src="img/intro-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
           </div>
-          <h1 class="title intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <h1 class="title title--subsection intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="description intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
       </section>
       <section class="reasons">
         <h2 class="visually-hidden">Список преимуществ</h2>
         <div class="reasons__wrapper">
-          <section class="photo-reason">
-            <div class="photo-reason__text">
-              <h3 class="title photo-reason__title">Настоящий городок</h3>
-              <span class="number photo-reason__number">— №1 —</span>
-              <p class="description photo-reason__description">Седона не аттарцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <img class="photo-reason__photo" src="/source/img/photo-city.jpg" width="520" height="260" alt="Вид на историческую улицу в городе Седона, США">
-          </section>
-          <ul class="features-list">
-            <li class="features-list__item">
-              <img class="features-list__icon" src="/source/img/icon-house.svg" width="39" height="37">
-              <div class="features-list__text">
-                <h3 class="title features-list__title">Жильё</h3>
-                <p class="description features-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <ol class="reasons__list">
+            <li class="photo-reason">
+              <div class="photo-reason__wrapper">
+                <div class="photo-reason__text">
+                  <h3 class="title title--subsection list photo-reason__title">Настоящий городок</h3>
+                  <span class="number photo-reason__number">— №1 —</span>
+                  <p class="description photo-reason__description">Седона не аттарцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img class="photo-reason__photo" src="img/photo-city.jpg" width="520" height="260" alt="Вид на историческую улицу в городе Седона, США">
+              </div>
+              <ul class="features-list">
+                <li class="features-list__item">
+                  <img class="features-list__icon" src="img/icon-house.svg" width="39" height="37">
+                  <div class="features-list__text">
+                    <h3 class="title title--subsection features-list__title">Жильё</h3>
+                    <p class="description features-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
+                </li>
+                <li class="features-list__item">
+                  <img class="features-list__icon" src="img/icon-burger.svg" width="40" height="35">
+                  <div class="features-list__text">
+                    <h3 class="title title--subsection features-list__title">Еда</h3>
+                    <p class="description features-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                </li>
+                <li class="features-list__item">
+                  <img class="features-list__icon" src="img/icon-gift.svg" width="32" height="38">
+                  <div class="features-list__text">
+                    <h3 class="title title--subsection features-list__title">Сувениры</h3>
+                    <p class="description features-list__description">Не только китайского, но и местного производства!</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="photo-reason photo-reason--right-align">
+              <div class="photo-reason__wrapper">
+                <div class="photo-reason__text">
+                  <h3 class="title title--subsection photo-reason__title">Там есть Мост Дьявола</h3>
+                  <span class="number photo-reason__number">— №2 —</span>
+                  <p class="description photo-reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+                <img class="photo-reason__photo" src="img/photo-city.jpg" width="515" height="256" alt="Глубокий каньон из красного камня с каменным мостом">
               </div>
             </li>
-            <li class="features-list__item">
-              <img class="features-list__icon" src="/source/img/icon-burger.svg" width="40" height="35">
-              <div class="features-list__text">
-                <h3 class="title features-list__title">Еда</h3>
-                <p class="description features-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </div>
+            <li class="text-reason">
+              <h3 class="title title--subsection text-reason__title">Небольшая площадь</h3>
+              <span class="number text-reason__number">— №3 —</span>
+              <p class="description text-reason__description">Все интересные места находятся очень близко</p>
             </li>
-            <li class="features-list__item">
-              <img class="features-list__icon" src="/source/img/icon-gift.svg" width="32" height="38">
-              <div class="features-list__text">
-                <h3 class="title features-list__title">Сувениры</h3>
-                <p class="description features-list__description">Не только китайского, но и местного производства!</p>
-              </div>
+            <li class="text-reason">
+              <h3 class="title title--subsection text-reason__title">Красивая дорога</h3>
+              <span class="number text-reason__number">— №4 —</span>
+              <p class="description text-reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-          </ul>
-          <section class="photo-reason photo-reason--right-align">
-            <div class="photo-reason__text">
-              <h3 class="title photo-reason__title">Там есть Мост Дьявола</h3>
-              <span class="number photo-reason__number">— №2 —</span>
-              <p class="description photo-reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <img class="photo-reason__photo" src="/source/img/photo-city.jpg" width="515" height="256" alt="Глубокий каньон из красного камня с каменным мостом">
-          </section>
-          <ul class="reasons-list">
-            <li class="reasons-list__item">
-              <h3 class="title reasons-list__title">Небольшая площадь</h3>
-              <span class="number reasons-list__number">— №3 —</span>
-              <p class="description reasons-list__description">Все интересные места находятся очень близко</p>
+            <li class="text-reason">
+              <h3 class="title title--subsection text-reason__title">Мало туристов</h3>
+              <span class="number text-reason__number">— №5 —</span>
+              <p class="description text-reason__description">Большинство едет в Гранд-Каньон и толпится там</p>
             </li>
-            <li class="reasons-list__item">
-              <h3 class="title reasons-list__title">Красива ядорога</h3>
-              <span class="number reasons-list__number">— №4 —</span>
-              <p class="description reasons-list__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="reasons-list__item">
-              <h3 class="title reasons-list__title">Мало туристов</h3>
-              <span class="number reasons-list__number">— №5 —</span>
-              <p class="description reasons-list__description">Большинство едет в гранд каньони толпится там</p>
-            </li>
-          </ul>
+          </ol>
         </div>
       </section>
-      <section class="CTA-block">
-        <div class="CTA-block__wrapper">
-          <h2 class="title CTA-block__title">Заинтересовались?</h2>
+      <section class="action-block">
+        <div class="action-block__wrapper">
+          <h2 class="title title--section action-block__title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <button class="button" type="button">Найти гостиницу</button>
         </div>
@@ -110,22 +114,22 @@
       <section class="map">
         <h2 class="visually-hidden">Карта расположения города Седона</h2>
         <div class="map__wrapper">
-          <img src="/source/img/map-mobile.png" width="320" height="350" alt="Карта штата Аризона в США с отмеченным на ней городом Седона">
+          <img src="img/map-mobile.png" width="320" height="350" alt="Карта штата Аризона в США с отмеченным на ней городом Седона">
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <p class="title main-footer__hashtag">#visitsedona</p>
-        <ul class="social-network">
+        <p class="title title--subsection main-footer__hashtag">#visitsedona</p>
+        <ul class="social-network main-footer__social">
           <li class="social-network__item social-network__item--vkontakte">
-            <a href="/">Группа в ВКонтакте</a>
+            <a href="#">Группа в ВКонтакте</a>
           </li>
           <li class="social-network__item social-network__item--telegram">
-            <a href="/">Канал в Телеграме</a>
+            <a href="#">Канал в Телеграме</a>
           </li>
           <li class="social-network__item social-network__item--youtube">
-            <a href="/">Канал в Ютубе</a>
+            <a href="#">Канал в Ютубе</a>
           </li>
         </ul>
       <div class="copyright main-footer__copyright">

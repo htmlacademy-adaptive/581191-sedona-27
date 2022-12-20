@@ -6,7 +6,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="/"><img src="/source/img/header-logo.svg" width="185" height="96" alt="Перейти на главную страницу"></a>
+      <a class="main-header__logo" href="index.html">
+        <img src="img/header-logo.svg" width="185" height="96" alt="Перейти на главную страницу"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -14,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a href="/source/index.html">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="/source/gallery.html">Фото и видео</a>
+              <a href="gallery.html">Фото и видео</a>
             </li>
             <li class="main-nav__list-item main-nav__list-item--active">
               <a>Форма отзыва</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="/">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -33,60 +34,79 @@
       <section class="intro">
         <div class="intro__wrapper">
           <div class="intro__cover">
-            <img class="intro__text" src="/source/img/SEDONA.svg" width="229" height="39" alt="Sedona">
+            <img class="intro__text" src="img/sedona.svg" width="229" height="39" alt="Sedona">
           </div>
-          <h1 class="title intro__title">Оставьте свой отзыв</h1>
+          <h1 class="title intro__title title--section">Оставьте свой отзыв</h1>
           <p class="description intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
       <form class="review-form" action="#" method="post">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <fieldset class="review-form__fieldset">
-          <legend class="title">Представьтесь:</legend>
-          <label class="input input--text">Имя &#8432;:<input type="text" placeholder="Пётр" required></label>
-          <label class="input input--text">Фамилия &#8432;:<input type="text" placeholder="Пустота" required></label>
-          <label class="input input--text">Отчество:<input type="text" placeholder="Викторович"></label>
+          <legend class="title title--subsection">Представьтесь:</legend>
+          <label class="input input--text">Имя*:
+            <input type="text" name="name" placeholder="Пётр" required>
+          </label>
+          <label class="input input--text">Фамилия*:
+            <input type="text" name="surname" placeholder="Пустота" required>
+          </label>
+          <label class="input input--text">Отчество:
+            <input type="text" name="middlename" placeholder="Викторович">
+          </label>
         </fieldset>
         <fieldset class="review-form__fieldset">
-          <legend class="title">Контактная информация:</legend>
-          <label class="input input--phone">Контактный телефон &#8432;:<input type="tel" placeholder="Введите телефон" required></label>
-          <label class="input input--email">Электронная почта &#8432;:<input type="email" placeholder="Введите email" required></label>
+          <legend class="title title--subsection">Контактная информация:</legend>
+          <label class="input input--phone">Контактный телефон*:
+            <input type="tel" name="phone" placeholder="Введите телефон" required>
+          </label>
+          <label class="input input--email">Электронная почта*:
+            <input type="email" name="email" placeholder="Введите email" required>
+          </label>
         </fieldset>
         <fieldset class="review-form__fieldset">
-          <legend class="title">Ваше общее впечатление:</legend>
-          <label class="radio radio--checked"><input type="radio" name="mood" checked>Скорее положительное</label>
-          <label class="radio"><input type="radio" name="mood">Скорее отрицательное</label>
-          <label class="radio"><input type="radio" name="mood">Затрудняюсь ответить</label>
+          <legend class="title title--subsection">Ваше общее впечатление:</legend>
+          <label class="radio">
+            <input type="radio" name="mood" checked>Скорее положительное</label>
+          <label class="radio">
+            <input type="radio" name="mood">Скорее отрицательное</label>
+          <label class="radio">
+            <input type="radio" name="mood">Затрудняюсь ответить</label>
         </fieldset>
         <fieldset class="review-form__fieldset">
-          <legend class="title">Посещенные достопримечательности:</legend>
-          <label class="checkbox checkbox--checked"><input type="checkbox" name="visited" checked>Мост Дьявола</label>
-          <label class="checkbox checkbox--checked"><input type="checkbox" name="visited" checked>Гора-Колокол</label>
-          <label class="checkbox checkbox--checked"><input type="checkbox" name="visited" checked>Слайд-парк</label>
-          <label class="checkbox"><input type="checkbox" name="visited">Красные скалы</label>
+          <legend class="title title--subsection">Посещенные достопримечательности:</legend>
+          <label class="checkbox">
+            <input type="checkbox" name="visited" checked>Мост Дьявола</label>
+          <label class="checkbox">
+            <input type="checkbox" name="visited" checked>Гора-Колокол</label>
+          <label class="checkbox">
+            <input type="checkbox" name="visited" checked>Слайд-парк</label>
+          <label class="checkbox">
+            <input type="checkbox" name="visited">Красные скалы</label>
         </fieldset>
         <fieldset class="review-form__fieldset">
-          <legend class="title">Опишите свои эмоции:</legend>
-          <label class="input input--text"><textarea rows="3" placeholder="Опишите подробно все свои восторги"></textarea></label>
+          <legend class="title title--subsection">Опишите свои эмоции:</legend>
+          <label class="input input--text">
+            <textarea rows="3" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
         </fieldset>
         <div class="review-form__footer">
-          <button class="button">Отправить отзыв</button>
-          <span>&#8432; — обязательные поля</span>
+          <button class="button" type="submit">Отправить отзыв</button>
+          <span>* — обязательные поля</span>
         </div>
       </form>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <p class="title main-footer__hashtag">#visitsedona</p>
-        <ul class="social-network">
+        <p class="title title--subsection main-footer__hashtag">#visitsedona</p>
+        <ul class="social-network main-footer__social">
           <li class="social-network__item social-network__item--vkontakte">
-            <a href="/">Группа в ВКонтакте</a>
+            <a href="#">Группа в ВКонтакте</a>
           </li>
           <li class="social-network__item social-network__item--telegram">
-            <a href="/">Канал в Телеграме</a>
+            <a href="#">Канал в Телеграме</a>
           </li>
           <li class="social-network__item social-network__item--youtube">
-            <a href="/">Канал в Ютубе</a>
+            <a href="#">Канал в Ютубе</a>
           </li>
         </ul>
       <div class="copyright main-footer__copyright">
@@ -96,14 +116,14 @@
       </div>
     </footer>
     <div class="popup popup--wrong">
-      <h3 class="title">Что-то пошло не так!</h3>
+      <h3 class="title title--section">Что-то пошло не так!</h3>
       <p class="description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="button">ОК</button>
+      <button class="button" type="button">Ок</button>
     </div>
     <div class="popup popup--successful">
-      <h3 class="title">Ваш отзыв отправлен!</h3>
+      <h3 class="title title--section">Ваш отзыв отправлен!</h3>
       <p class="description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="button">Закрыть окно</button>
+      <button class="button" type="button">Закрыть окно</button>
     </div>
   </body>
 </html>
