@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../source/fonts/ptsans.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../source/fonts/ptsansbold.woff2") format("woff2");
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  width: 100%;
+  height: 56px;
+}
+
+.main-header__logo {
+  display: block;
+  margin: 0 auto;
+  width: 185px;
+  height: 96px;
+}
+
+.main-nav {
+  background-color: #81b3d3;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__link {
+  display: block;
+  text-align: center;
+  padding: 15px 109px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #010000;
+  text-transform: uppercase;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #333333;
+}
+
+.intro__cover {
+  height: 389px;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro__text {
+  display: block;
+  margin: 0;
+  align-self: center;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 30px 18px;
+}
+
+.intro__description {
+  margin: 0;
+  padding: 0 18px 30px;
+}
+
+.photo-reason__photo {
+  height: 260px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.photo-reason__text {
+  background: #81b3d3;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.photo-reason__title,
+.photo-reason__description,
+.photo-reason__number {
+  color: #010000;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.features-list__title,
+.features-list__description {
+  text-align: left;
+}
+
+.text-reason {
+  background: #eeeeee;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-reason__number {
+  color: #333333;
+  font-size: 14px;
+}
+
+.action-block {
+  padding: 18px;
+  text-align: center;
+}
+
+.action-block__title {
+  font-size: 21px;
+}
+
+.action-block__button {
+  min-width: 284px;
+}
+
+.button {
+  background: #81b3d3;
+  color: #010000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  border: none;
+  text-transform: uppercase;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.reasons__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.map {
+  width: 100%;
+}
+.map img {
+  width: 100%;
+  height: auto;
+}
+
+.main-footer__hashtag {
+  font-size: 21px;
+}
+
+.social-network {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #81b3d3;
+}
+
+.photos {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.photo-post {
+  font-size: 14px;
+}
+
+.photo-post__wrapper {
+  padding: 24px 0;
+}
+
+.photo-post__title {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.photo-post__author {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  text-transform: none;
+  color: #333333;
+}
+
+.photo-post__likes {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.video {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.video__title {
+  font-size: 18px;
+}
+
+.video__description {
+  font-size: 14px;
+  color: #333333;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.review-form__fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-form__button {
+  min-width: 280px;
+}
+
+.review-form__footer span {
+  display: block;
+  font-size: 12px;
+  color: #333333;
+  opacity: 0.6;
+  text-align: right;
+}
+
+.input-item {
+  font-size: 14px;
+  color: #333333;
+}
+
+.input-item__field {
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: none;
+  background: #f2f2f2;
+  border-style: none;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
