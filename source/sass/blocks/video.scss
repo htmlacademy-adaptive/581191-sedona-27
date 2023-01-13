@@ -1,0 +1,15 @@
+@use "../global/global-all.scss";
+
+.video {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.video__title {
+  font-size: 18px;
+}
+
+.video__description {
+  font-size: 14px;
+  color: global-all.$dark-gray;
+}

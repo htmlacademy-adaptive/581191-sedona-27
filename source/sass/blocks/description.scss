@@ -1,0 +1,8 @@
+@use "../global/global-all.scss";
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: global-all.$dark-gray;
+}

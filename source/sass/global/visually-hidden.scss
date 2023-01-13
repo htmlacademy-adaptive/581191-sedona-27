@@ -1,0 +1,5 @@
+@use "../global/global-all";
+
+.visually-hidden {
+  @include global-all.visually-hidden;
+}

@@ -1,0 +1,22 @@
+@use "../global/global-all";
+
+.main-nav {
+  background-color: global-all.$blue;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  @include global-all.list-reset;
+}
+
+.main-nav__link {
+  display: block;
+  text-align: center;
+  padding: 15px 109px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: global-all.$white;
+  text-transform: uppercase;
+}

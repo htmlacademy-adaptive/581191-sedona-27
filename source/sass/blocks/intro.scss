@@ -1,0 +1,26 @@
+.intro__cover {
+  height: 389px;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro__text {
+  display: block;
+  margin: 0;
+  align-self: center;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 30px 18px;
+}
+
+.intro__description {
+  margin: 0;
+  padding: 0 18px 30px;
+}

@@ -1,0 +1,20 @@
+@use "../global/global-all";
+
+.photo-reason__photo {
+  height: 260px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.photo-reason__text {
+  background: global-all.$blue;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.photo-reason__title,
+.photo-reason__description,
+.photo-reason__number {
+  color: global-all.$white;
+}

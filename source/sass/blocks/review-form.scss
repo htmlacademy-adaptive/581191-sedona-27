@@ -1,0 +1,30 @@
+@use "../global/global-all";
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.review-form__fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-form__button {
+  min-width: 280px;
+}
+
+.review-form__footer {
+  span {
+    display: block;
+    font-size: 12px;
+    color: global-all.$dark-gray;
+    opacity: 0.6;
+    text-align: right;
+  }
+}

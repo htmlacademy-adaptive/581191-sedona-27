@@ -1,0 +1,6 @@
+@use "../global/global-all";
+
+.social-network {
+  @include global-all.list-reset;
+  background: global-all.$blue;
+}

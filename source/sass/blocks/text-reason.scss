@@ -1,0 +1,14 @@
+@use "../global/global-all";
+
+.text-reason {
+  background: global-all.$light-gray;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-reason__number {
+  color: global-all.$dark-gray;
+  font-size: 14px;
+}
