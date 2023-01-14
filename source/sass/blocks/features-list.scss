@@ -1,7 +1,7 @@
-@use "../global/global-all";
+@use "../global/all";
 
 .features-list {
-  @include global-all.list-reset;
+  @include all.list-reset;
   padding: 18px;
   display: block;
   margin: 0 auto;

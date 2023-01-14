@@ -1,4 +1,4 @@
-@use "../global/global-all";
+@use "../global/all";
 
 .photo-post {
   font-size: 14px;
@@ -18,7 +18,7 @@
   padding: 0;
   padding-top: 4px;
   text-transform: none;
-  color: global-all.$dark-gray;
+  color: all.$dark-gray;
 }
 
 .photo-post__likes {

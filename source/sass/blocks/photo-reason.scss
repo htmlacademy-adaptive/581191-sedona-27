@@ -1,4 +1,4 @@
-@use "../global/global-all";
+@use "../global/all";
 
 .photo-reason__photo {
   height: 260px;
@@ -8,7 +8,7 @@
 }
 
 .photo-reason__text {
-  background: global-all.$blue;
+  background: all.$blue;
   padding: 20px 0;
   text-align: center;
 }
@@ -16,5 +16,5 @@
 .photo-reason__title,
 .photo-reason__description,
 .photo-reason__number {
-  color: global-all.$white;
+  color: all.$white;
 }

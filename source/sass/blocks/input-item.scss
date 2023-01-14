@@ -1,8 +1,8 @@
-@use "../global/global-all";
+@use "../global/all";
 
 .input-item {
   font-size: 14px;
-  color: global-all.$dark-gray;
+  color: all.$dark-gray;
 }
 
 .input-item__field {
@@ -11,7 +11,7 @@
   font-weight: 700;
   font-size: 18px;
   box-shadow: none;
-  background: global-all.$form-light-gray;
+  background: all.$form-light-gray;
   border-style: none;
   padding: 10px;
 }

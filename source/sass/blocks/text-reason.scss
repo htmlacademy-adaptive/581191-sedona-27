@@ -1,7 +1,7 @@
-@use "../global/global-all";
+@use "../global/all";
 
 .text-reason {
-  background: global-all.$light-gray;
+  background: all.$light-gray;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,6 @@
 }
 
 .text-reason__number {
-  color: global-all.$dark-gray;
+  color: all.$dark-gray;
   font-size: 14px;
 }

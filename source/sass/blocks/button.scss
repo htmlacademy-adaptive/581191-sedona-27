@@ -1,8 +1,8 @@
-@use "../global/global-all";
+@use "../global/all";
 
 .button {
-  background: global-all.$blue;
-  color: global-all.$white;
+  background: all.$blue;
+  color: all.$white;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;

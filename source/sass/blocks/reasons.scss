@@ -1,5 +1,5 @@
-@use "../global/global-all";
+@use "../global/all";
 
 .reasons__list {
-  @include global-all.list-reset;
+  @include all.list-reset;
 }
