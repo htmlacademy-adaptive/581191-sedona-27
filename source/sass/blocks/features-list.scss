@@ -1,0 +1,13 @@
+@use "../global/all";
+
+.features-list {
+  @include all.list-reset;
+  padding: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.features-list__title,
+.features-list__description {
+  text-align: left;
+}

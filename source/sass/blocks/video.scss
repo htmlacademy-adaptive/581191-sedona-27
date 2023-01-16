@@ -1,0 +1,15 @@
+@use "../global/all";
+
+.video {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.video__title {
+  font-size: 18px;
+}
+
+.video__description {
+  font-size: 14px;
+  color: all.$dark-gray;
+}

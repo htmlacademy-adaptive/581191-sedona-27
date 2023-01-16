@@ -1,0 +1,32 @@
+@use "../global/all";
+
+.photo-post {
+  font-size: 14px;
+}
+
+.photo-post__wrapper {
+  padding: 24px 0;
+}
+
+.photo-post__title {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.photo-post__author {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  text-transform: none;
+  color: all.$dark-gray;
+}
+
+.photo-post__likes {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}

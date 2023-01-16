@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+//* Global *//
+@use "global/all";
+@use "global/visually-hidden";
+
+//* Header & Footer *//
+@use "blocks/main-header";
+
+//* Navigation *//
+@use "blocks/main-nav";
+
+//* Blocks *//
+@use "blocks/page__body";
+@use "blocks/title";
+@use "blocks/description";
+@use "blocks/intro";
+@use "blocks/photo-reason";
+@use "blocks/features-list";
+@use "blocks/text-reason";
+@use "blocks/action-block";
+@use "blocks/button";
+@use "blocks/reasons";
+@use "blocks/map";
+@use "blocks/main-footer";
+@use "blocks/social-network";
+@use "blocks/photos";
+@use "blocks/photo-post";
+@use "blocks/video";
+@use "blocks/review-form";
+@use "blocks/input-item"

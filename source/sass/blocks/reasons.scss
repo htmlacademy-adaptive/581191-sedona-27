@@ -1,0 +1,5 @@
+@use "../global/all";
+
+.reasons__list {
+  @include all.list-reset;
+}

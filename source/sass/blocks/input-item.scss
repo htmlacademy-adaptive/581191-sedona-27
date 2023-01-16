@@ -1,0 +1,17 @@
+@use "../global/all";
+
+.input-item {
+  font-size: 14px;
+  color: all.$dark-gray;
+}
+
+.input-item__field {
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: none;
+  background: all.$form-light-gray;
+  border-style: none;
+  padding: 10px;
+}
