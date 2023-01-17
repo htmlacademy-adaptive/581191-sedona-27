@@ -1,13 +1,29 @@
+@use "../global/all.scss";
+
 .intro__cover {
   background-image: url("../img/back-mobile.jpg");
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 389px;
+  position: relative;
+  z-index: -1;
+
+  @media (min-width: all.$tablet) {
+    min-height: 518px;
+    background-position: center;
+  }
 }
 
 .intro__text {
   display: block;
-  margin: 0 auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: auto;
 }
 
 .intro__title {
@@ -16,6 +32,10 @@
 }
 
 .intro__description {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 18px 30px;
+
+  @media (min-width: all.$tablet) {
+    width: 45%;
+  }
 }

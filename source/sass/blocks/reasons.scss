@@ -2,4 +2,6 @@
 
 .reasons__list {
   @include all.list-reset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }

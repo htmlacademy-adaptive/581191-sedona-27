@@ -43,7 +43,7 @@
       </section>
       <form class="review-form" action="#" method="post">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <fieldset class="review-form__fieldset">
+        <fieldset class="review-form__fieldset review-form__fieldset--name">
           <legend class="title title--subsection">Представьтесь:</legend>
           <label class="input-item input-item--text">Имя*:
             <input class="input-item__field" type="text" name="name" placeholder="Пётр" required>
@@ -55,7 +55,7 @@
             <input class="input-item__field" type="text" name="middlename" placeholder="Викторович">
           </label>
         </fieldset>
-        <fieldset class="review-form__fieldset">
+        <fieldset class="review-form__fieldset review-form__fieldset--contact">
           <legend class="title title--subsection">Контактная информация:</legend>
           <label class="input-item input-item--phone">Контактный телефон*:
             <input class="input-item__field" type="tel" name="phone" placeholder="Введите телефон" required>
@@ -64,7 +64,7 @@
             <input class="input-item__field" type="email" name="email" placeholder="Введите email" required>
           </label>
         </fieldset>
-        <fieldset class="review-form__fieldset">
+        <fieldset class="review-form__fieldset review-form__fieldset--mood">
           <legend class="title title--subsection">Ваше общее впечатление:</legend>
           <label class="radio">
             <input type="radio" name="mood" checked>Скорее положительное</label>
@@ -73,7 +73,7 @@
           <label class="radio">
             <input type="radio" name="mood">Затрудняюсь ответить</label>
         </fieldset>
-        <fieldset class="review-form__fieldset">
+        <fieldset class="review-form__fieldset review-form__fieldset--places">
           <legend class="title title--subsection">Посещенные достопримечательности:</legend>
           <label class="checkbox">
             <input type="checkbox" name="visited" checked>Мост Дьявола</label>
@@ -84,7 +84,7 @@
           <label class="checkbox">
             <input type="checkbox" name="visited">Красные скалы</label>
         </fieldset>
-        <fieldset class="review-form__fieldset">
+        <fieldset class="review-form__fieldset review-form__fieldset--emotions">
           <legend class="title title--subsection">Опишите свои эмоции:</legend>
           <label class="input input--text">
             <textarea rows="3" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>

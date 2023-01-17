@@ -1,16 +1,43 @@
 @use "../global/all";
 
+.photo-reason {
+  grid-column: 1/4;
+}
+
+.photo-reason__wrapper {
+  display: grid;
+
+  @media (min-width: all.$tablet) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.photo-reason__wrapper--right-align {
+  @media (min-width: all.$tablet) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
 .photo-reason__photo {
-  height: 260px;
-  width: auto;
+  height: auto;
+  width: 100%;
   margin: 0 auto;
   display: block;
+
+  @media (min-width: all.$tablet) {
+    height: 256px;
+    width: auto;
+  }
 }
 
 .photo-reason__text {
   background: all.$blue;
-  padding: 20px 0;
+  padding: 18px;
   text-align: center;
+
+  @media (min-width: all.$tablet) {
+    order: 2;
+  }
 }
 
 .photo-reason__title,

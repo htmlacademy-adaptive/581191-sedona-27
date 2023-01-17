@@ -5,4 +5,9 @@
   padding: 0;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
+
+  @media (min-width: all.$desktop) {
+    box-shadow: all.$shadow;
+    margin: 0 40px;
+  }
 }
