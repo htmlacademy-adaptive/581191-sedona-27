@@ -1,4 +1,16 @@
+@use "../global/all";
+
 .photos {
-  width: 280px;
   margin: 0 auto;
+  display: grid;
+  padding: 24px 20px;
+
+  @media (min-width: all.$tablet) {
+    padding: 0 60px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: all.$desktop) {
+    padding: 0;
+  }
 }

@@ -2,9 +2,14 @@
 
 .features-list {
   @include all.list-reset;
-  padding: 18px;
-  display: block;
   margin: 0 auto;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: all.$tablet) {
+    flex-direction: row;
+  }
 }
 
 .features-list__title,

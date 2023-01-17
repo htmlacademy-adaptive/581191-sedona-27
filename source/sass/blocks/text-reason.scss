@@ -6,6 +6,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  grid-column: 1/4;
+
+  @media (min-width: all.$tablet) {
+    grid-column: inherit;
+  }
 }
 
 .text-reason__number {

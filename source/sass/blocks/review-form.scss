@@ -4,8 +4,13 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  justify-items: center;
   padding: 0 20px;
+  flex-wrap: wrap;
+
+  @media (min-width: all.$tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .review-form__fieldset {
@@ -13,6 +18,14 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.review-form__fieldset--mood,
+.review-form__fieldset--places,
+.review-form__fieldset--emotions {
+  @media (min-width: all.$tablet) {
+    width: 100%;
+  }
 }
 
 .review-form__button {

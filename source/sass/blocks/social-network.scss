@@ -3,4 +3,5 @@
 .social-network {
   @include all.list-reset;
   background: all.$blue;
+  display: flex;
 }
